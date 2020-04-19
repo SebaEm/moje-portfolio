@@ -18,67 +18,83 @@
 
 <body>
 
-    <header id="header">
-        <!-- <img src="img/header.jpg" alt="Zdjęcie nagłówkowe"> -->
-        <h1 id="main-header-text">FRONT END DEVELOPER</h1>
-        <p id="header-text">HTML • CSS • JAVASCRIPT</p>
-        <button type="submit">DOWIEDZ SIĘ WIĘCEJ</button>
+    <header class="header">
+        <h1 class="main-header-text">FRONT END DEVELOPER</h1>
+        <hr>
+        <p class="header-text">HTML <span>•</span> CSS <span>•</span> JAVASCRIPT</p>
+        <a href="#about" class="btn">Dowiedz się więcej</a>
+        <!-- <button type="submit">DOWIEDZ SIĘ WIĘCEJ</button> -->
     </header>
 
-    <nav id="menu">
-        <ul>
+    <nav class="menu">
+        <ul class="main-menu">
             <li class="menu-item"><a href="#">O MNIE</a></li>
             <li class="menu-item"><a href="#about">PORTFOLIO</a></li>
             <li class="menu-item"><a href="#contact">KONTAKT</a></li>
         </ul>
     </nav>
 
-    <section id="o-mnie">
-        <h2 id="second-text">O MNIE</h2>
-        <img src="img/about.jpg" alt="Zdjęcie sekcji o mnie" class="circle">
+    <section id="about" class="about">
+        <div class="container">
+            <header class="section-header">
+            <h2>O MNIE</h2>
+            <hr>
 
-        <p class="o-mnie-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam optio ipsa excepturi
-            placeat vel nemo quas. Sequi, officiis, atque adipisci laboriosam tenetur animi deserunt culpa quo ipsam
-            error quaerat exercitationem fugiat similique quae?</p>
+            <img src="img/about.jpg" alt="Zdjęcie sekcji o mnie" class="circle">
 
-        <p class="o-mnie-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae molestias dolorum
-            hic neque culpa minima, maiores suscipit, ipsum recusandae exercitationem est ipsam corrupti veniam. Quo,
-            tempora. Ipsam laboriosam qui autem.</p>
+            <p class="about-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam optio ipsa
+                excepturi
+                placeat vel nemo quas. Sequi, officiis, atque adipisci laboriosam tenetur animi deserunt culpa quo ipsam
+                error quaerat exercitationem fugiat similique quae?</p>
 
-            <button type="submit">MOJE PORTFOLIO</button>
+            <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae molestias
+                dolorum
+                hic neque culpa minima, maiores suscipit, ipsum recusandae exercitationem est ipsam corrupti veniam.
+                Quo,
+                tempora. Ipsam laboriosam qui autem.</p>
 
+            <a href="#portfolio" class="btn">Moje portfolio</a>
+        </header>
+        </div>
     </section>
 
-    <section class="portfolio">
-        <h2 id="second-text">PORTFOLIO</h2>
-        <div class="portfolio-image-container">
-            <img src="img/portfolio/photo-1.jpg" alt="1" class="item">
-            <img src="img/portfolio/photo-2.jpg" alt="2" class="item">
-            <img src="img/portfolio/photo-3.jpg" alt="3" class="item">
-            <img src="img/portfolio/photo-4.jpg" alt="4" class="item">
-            <img src="img/portfolio/photo-5.jpg" alt="5" class="item">
-            <img src="img/portfolio/photo-6.jpg" alt="6" class="item">
-            <img src="img/portfolio/photo-7.jpg" alt="7" class="item">
-            <img src="img/portfolio/photo-8.jpg" alt="8" class="item">
-            <img src="img/portfolio/photo-9.jpg" alt="9" class="item">
-            <img src="img/portfolio/photo-10.jpg" alt="10" class="item">
-            <img src="img/portfolio/photo-11.jpg" alt="11" class="item">
-            <img src="img/portfolio/photo-12.jpg" alt="12" class="item">
-
-        </div>
+    <section id="portfolio">
+        <div class="container">
+            <header class="section-header">
+            <h2 id="second-text">PORTFOLIO</h2>
+            <div class="portfolio-image-container">
+                <img src="img/portfolio/photo-1.jpg" alt="1" class="item">
+                <img src="img/portfolio/photo-2.jpg" alt="2" class="item">
+                <img src="img/portfolio/photo-3.jpg" alt="3" class="item">
+                <img src="img/portfolio/photo-4.jpg" alt="4" class="item">
+                <img src="img/portfolio/photo-5.jpg" alt="5" class="item">
+                <img src="img/portfolio/photo-6.jpg" alt="6" class="item">
+                <img src="img/portfolio/photo-7.jpg" alt="7" class="item">
+                <img src="img/portfolio/photo-8.jpg" alt="8" class="item">
+                <img src="img/portfolio/photo-9.jpg" alt="9" class="item">
+                <img src="img/portfolio/photo-10.jpg" alt="10" class="item">
+                <img src="img/portfolio/photo-11.jpg" alt="11" class="item">
+                <img src="img/portfolio/photo-12.jpg" alt="12" class="item">
+            </header>
+            </div>
 
     </section>
 
     <section id="kontakt">
+        <div class="container">
+            <header class="section-header">
+            <h2 id="second-text">Kontakt</h2>
 
-    <form action="#">
+            <form action="#">
 
-        <input type="text" name="name" id="name" placeholder="Imię">
-        <input type="text" name="email" id="email" placeholder="Email">
-        <textarea name="message" id="message" placeholder="Wiadomość"></textarea>
-        <button type="submit" class="button">WYŚLIJ WIADOMOŚĆ</button>
+                <input type="text" name="name" id="name" placeholder="Imię">
+                <input type="text" name="email" id="email" placeholder="Email">
+                <textarea name="message" id="message" placeholder="Wiadomość"></textarea>
+                <button type="submit" class="button">WYŚLIJ WIADOMOŚĆ</button>
 
-    </form>
+            </form>
+        </header>
+        </div>
     </section>
 
     <footer>

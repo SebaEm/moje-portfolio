@@ -1,83 +1,180 @@
+/* General styles */
+
 body {
-    margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 * {
     box-sizing: border-box;
 }
 
-#header {
+hr {
+    width: 70px;
+    height: 1px;
+    background-color: #007bff;
+    border: 0;
+}
+
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    border: 1px solid #007bff;
+    padding: 14px 20px;
+    transition: all .3s;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #007bff;
+}
+
+section {
+    padding: 120px 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 1.9em;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.section-header {
+    margin-bottom: 75px;
+}
+
+/* Main header styles */
+
+.header {
     background-image: url(../img/header.jpg);
     height: 60vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0px;
 }
 
-#menu {
+.header h1 {
+    font-size: 4.2em;
+    color: #007bff;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.header p {
+    color: #333;
+    margin: 40px 0;
+    font-size: 1.3em;
+}
+
+/* Main menu styles */
+
+.menu {
+    position: sticky;
+    top: 0;
     text-align: center;
     background: #007bff;
 }
 
-#menu .menu-item {
+.menu .main-menu {
+    margin: 0;
+    padding: 10 0px;
+    text-align: center;
+}
+
+.menu .main-menu .menu-item {
     display: inline-block;
-    padding: 25px;
+    margin: 0 10px;
     list-style: none;
   }
 
-  #menu .menu-item a{
+  .menu .main-menu .menu-item a {
+    text-transform: uppercase;
     text-decoration: none;
     color: #fff;
+    transition: all .3s;
+    padding: 14px 20px;
+    display: inline-block;
   }
 
-  h1 {
-      font-size: 4.2em;
+  .menu .main-menu .menu-item a:hover {
       color: #007bff;
+      background-color: #fff;
   }
 
-  h2 {
-      font-size: 1.9em;
-      color: #333;
-  }
+ /* About section styles */
 
-  #header-text {
-      color: #333;
-  }
+ .about {
+     text-align: center;
+ }
 
-  button {
-      border: 1px solid #007bff;
-      color: #333;
-  }
-
-  #o-mnie {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .o-mnie-content {
-      text-align: center;
-  }
-
-  .circle {
-    height:300px;
+ .about .circle {
+    /* height:300px; */
     border-radius:50%;
-    -moz-border-radius:50%;
+    /* -moz-border-radius:50%;
     -webkit-border-radius:50%;
-    width:300px;
+    width:300px; */
   }
 
-  .portfolio {
+  .about p {
+      width: 700px;
+      margin: 40px auto 30px auto;
+      color: #777;
+      line-height: 1.4;  
+  }
+
+
+  #portfolio {
     background-color: #f2f1ed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
+  .portfolio-image-container { 
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-content: center; */
+    /* align-items: center; */
+  }
+
+  @media (min-width: 992px) {
+	.item {
+		width: 25%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.item {
+		width: 50%;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+	.item {
+		width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	
+	.portfolio,
+	.item {
+		width: 100%;
+	}
+}
